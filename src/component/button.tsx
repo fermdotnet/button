@@ -4,6 +4,8 @@ type Props = {
   text: string;
 };
 
-export const Button: React.FC<Props> = ({ text }) => {
+const Button: React.FC<Props> = ({ text }) => {
   return <button>{text}</button>;
 };
+
+export default Button;

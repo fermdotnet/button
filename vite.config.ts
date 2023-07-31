@@ -1,4 +1,5 @@
 import { resolve } from 'node:path';
+
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
@@ -11,13 +12,13 @@ import * as packageJson from './package.json';
 export default defineConfig((configEnv) => ({
   plugins: [
     dts({
-      include: ['src/component/'],
+      include: ['src/component/']
     }),
     react(),
     tsConfigPaths(),
     linterPlugin({
       include: ['./src}/**/*.{ts,tsx}'],
-      linters: [new EsLinter({ configEnv })],
+      linters: [new EsLinter({ configEnv })]
     })
   ],
   build: {
@@ -25,7 +26,7 @@ export default defineConfig((configEnv) => ({
       entry: resolve('src', 'component/index.ts'),
       name: 'Button',
       formats: ['es', 'umd'],
-      fileName: (format) => `lib.${format}.js`,
+      fileName: (format) => `lib.${format}.js`
     },
     rollupOptions: {
       external: [...Object.keys(packageJson.peerDependencies)]
