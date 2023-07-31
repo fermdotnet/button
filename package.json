@@ -13,14 +13,10 @@
     "prepare": "husky install",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "prettier:fix": "prettier --write .",
     "semantic-release": "semantic-release --branches main",
     "commit": "git-cz",
     "commit-all": "git add --all && git-cz && git push"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "files": [
     "dist"
@@ -90,11 +86,5 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  },
-  "overrides": {
-    "strip-ansi": "6.0.1"
-  },
-  "resolutions": {
-    "strip-ansi": "6.0.1"
   }
 }
