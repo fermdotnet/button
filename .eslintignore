@@ -3,4 +3,4 @@ node_modules
 .husky
 .storybook
 .github
-release.config.js
+release.config.cjs

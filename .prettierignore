@@ -1,7 +1,7 @@
 node_modules
 dist
 package.json
-release.config.js
+release.config.cjs
 .github
 .husky
 .storybook
