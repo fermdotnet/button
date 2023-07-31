@@ -1,5 +1,5 @@
 {
-  "name": "button",
+  "name": "@ferdotnet/button",
   "private": false,
   "version": "0.0.0-development",
   "type": "module",
