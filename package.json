@@ -90,5 +90,11 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "overrides": {
+    "strip-ansi": "6.0.1"
+  },
+  "resolutions": {
+    "strip-ansi": "6.0.1"
   }
 }
