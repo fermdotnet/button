@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && npm run copy-story",
     "preview": "vite preview",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "eslint --fix 'src/**/*.{jsx,ts,tsx}'",
@@ -15,7 +15,8 @@
     "build-storybook": "storybook build",
     "semantic-release": "semantic-release --branches main",
     "commit": "git-cz",
-    "commit-all": "git add --all && git-cz && git push"
+    "commit-all": "git add --all && git-cz && git push",
+    "copy-story": "cp -r ./src/component/button.stories.tsx ./dist/button.stories.tsx"
   },
   "files": [
     "dist"
