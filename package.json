@@ -15,8 +15,7 @@
     "build-storybook": "storybook build",
     "semantic-release": "semantic-release --branches main",
     "commit": "git-cz",
-    "commit-all": "git add --all && git-cz && git push",
-    "chromatic": "npx chromatic --project-token=CHROMATIC_PROJECT_TOKEN"
+    "commit-all": "git add --all && git-cz && git push"
   },
   "files": [
     "dist"
@@ -49,7 +48,6 @@
     "@typescript-eslint/eslint-plugin": "^6.2.0",
     "@typescript-eslint/parser": "^6.2.0",
     "@vitejs/plugin-react": "^4.0.3",
-    "chromatic": "^6.20.0",
     "commitizen": "^4.3.0",
     "eslint": "^8.2.0",
     "eslint-config-prettier": "^8.5.0",
